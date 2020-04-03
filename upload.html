@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Proyecto Gifos</title>
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,500,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/aca42dcbf7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/RecordRTC/5.5.8/RecordRTC.js" type="text/javascript"></script>
+    <script src="./js/archivo.js"></script>
+    <script src="./js/capturar.js"></script>
+    
+    
+
+</head>
+<body>
+    <div class="stripe">
+        <div>
+            <p>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: </p>
+        </div>
+    </div>
+    
+    <nav>
+        <div class="logo_upload">
+            <a href="./index.html"><img class="flecha" src="./imgs/arrow.svg" alt=""></a>
+            <img id="logocolor" src="./imgs/gifOF_logo.png" alt="logo">
+        </div>
+        <div class="menu">
+            <div class="item1" onclick=crearGuifos()>
+                <a href="./upload.html">Crear Guifos</a>
+            </div>
+            <div>
+                <div class="item2" onmouseover=mostrarMenu() onmouseout=esconderMenu()>
+                    <div class="item21">Elegir Tema</div>
+                    <div class="item22"><img src="./imgs/dropdown.svg" alt=""></div>
+                </div>
+                <div class="menudesplegable">
+                    <ul onmouseover=mostrarMenu() onmouseout=esconderMenu()>
+                        <li class="sailorday" onclick=changeUploadDay()><u>S</u>ailor Day</li>
+                        <li class="sailornight" onclick=changeUploadNight()>Sailor Night</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="item3" onclick=misguifos()>
+                <u>M</u>is Guifos
+            </div>
+        </div>
+    </nav>    
+
+    <div class="crearguifos">
+        <div class="cabezal_crearguifos">
+            Crear Guifos
+            <img src="./imgs/button3.svg" alt="" srcset="">
+        </div>
+        <div>
+            <div class="texto_crearguifos">
+                <div><img src="./imgs/window img.png" alt=""></div>
+                <div>
+                    <h3>Aquí podrás crear tus propios guifos</h3>
+                    <p>Crear tu <b><i>guifo</i></b> es muy fácil, graba cualquier imagen con tu cámara y obtén guifos personalizados. Los pasos para crear tu guifo son:</p>
+                        <p><b>1)</b> Dar permisos de acceso a la cámara (sólo por el tiempo de uso)</p>
+                        <p><b>2)</b> Capturar tu momento guifo</p>
+                        <p><b>3)</b> Revisar el momento</p>
+                        <p><b>4)</b> Listo para subir y compartir!</p>
+                        <p>¿Quieres comenzar a crear tu <b>guifo</b> ahora?</p>
+                </div>
+            </div>
+            <div class="botones_crearguifos">
+                <button class="boton_crearguifos1" onclick=cancelar()>Cancelar</button>
+                <button class="boton_crearguifos2" onclick=comenzar() >Comenzar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="capturar">
+        <div class="cabezal_crearguifos">
+            <div class="titulo_capturar">Un chequeo antes de empezar</div>
+            <img src="./imgs/button3.svg" alt="" srcset="">
+        </div>
+        <div>
+            <video src=""></video>
+        </div>
+        <div class="botones_capturar">
+            <button class="boton_crearguifos3"><img src="./imgs/camera.svg" alt=""></button>
+            <button class="boton_crearguifos2" onclick=capturar()>Capturar</button>
+        </div>
+        <div class="chequeo">
+            <div class="cronometro">
+                <span id="minutos">00</span> : <span id="segundos">00</span> : <span id="decimas">00</span>    
+            </div>
+            <div class="botones_listo">
+                <button class="boton_crearguifos4"><img src="./imgs/recording.svg" alt=""></button>
+                <button class="boton_crearguifos5" onclick=frenar()>Listo</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="preview">
+        <div class="cabezal_crearguifos">
+            <div class="titulo_capturar">Vista Previa</div>
+            <img src="./imgs/button3.svg" alt="" srcset="">
+        </div>
+        <div>
+            <img class="previewGif" src=""></img>
+        </div>
+        <div class="botones_repetir_subir">
+            <button class="boton_crearguifos1" onclick = repetirCaptura()>Repetir Captura</button>
+            <button class="boton_crearguifos2" onclick=upload()>Subir Gifo</button>
+        </div>
+    </div>
+
+    <div class="subiendo">
+        <div class="cabezal_crearguifos">
+            <div class="titulo_capturar">Subiendo Guifo</div>
+            <img src="./imgs/button3.svg" alt="" srcset="">
+        </div>
+        <div class="globe">
+            <div><img src="./imgs/globe_img.png"></img></div>
+            <div><p>Estamos subiendo tu guifo…</p></div>
+            <div class="carga">
+                <div class="sincargar"></div>
+                <div class="sincargar"></div>
+                <div class="sincargar"></div>
+                <div class="sincargar"></div>
+                <div class="sincargar"></div>
+                <div class="sincargar"></div>
+                <div class="sincargar"></div>
+                <div class="sincargar"></div>
+                <div class="sincargar"></div>
+                <div class="sincargar"></div>
+                <div class="sincargar"></div>
+                <div class="sincargar"></div>
+                <div class="sincargar"></div>
+                <div class="sincargar"></div>
+                <div class="sincargar"></div>
+                <div class="sincargar"></div>
+                <div class="sincargar"></div>
+                <div class="sincargar"></div>
+                <div class="sincargar"></div>
+                <div class="sincargar"></div>
+                <div class="sincargar"></div>
+                <div class="sincargar"></div>
+                <div class="sincargar"></div>
+            </div>
+            <div class="tiemporestante"><p>Tiempo restante: </p></div>
+        </div>
+        <div class="boton_cancelar">
+            <button class="boton_crearguifos1" onclick=cancelar()>Cancelar</button>
+        </div>
+    </div>
+
+    <div class="exito">
+        <div class="cabezal_crearguifos">
+            <div class="titulo_capturar">Guifo Subido con Éxito</div>
+            <img src="./imgs/button3.svg" alt="" srcset="">
+        </div>
+        <div class="gifListo">
+            <div class="previewGifListo">
+                <img src=""></img>
+            </div>
+            <div class="columna_derecha">
+                <div>
+                    <p>Guifo creado con Éxito</p>
+                </div>
+                <div>
+                    <button class="boton_copiar_descargar" id="copiarGifo">Copiar Enlace Guifo</button>
+                    <button class="boton_copiar_descargar" id="descargarGifo" >Descargar Guifo</button>
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </div>
+        <div class="boton_cancelar">
+            <button class="boton_listo" onclick=cancelar()>Listo</button>
+        </div>
+    </div>
+   
+    <div class="misGuifos">
+        <p>Mis Guifos</p>
+    </div>
+    <div class="desplegarMisGuifos">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+    </div>
+
+</body>
+</html>

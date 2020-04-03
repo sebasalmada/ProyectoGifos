@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Proyecto Gifos</title>
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,500,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/aca42dcbf7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/archivo.js"></script>
+    <script src="./js/sugeridos.js"></script>
+    <script src="./js/tendencias.js"></script>
+
+</head>
+<body>
+    <div class="stripe">
+        <div>
+            <p>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: </p>
+        </div>
+    </div>
+    
+    <nav>
+        <div class="logo">
+            <img src="./imgs/gifOF_logo.png" alt="logo">
+        </div>
+        <div class="menu">
+            <div class="item1" onclick=crearGuifos()>
+                <a href="./upload.html">Crear Guifos</a>
+            </div>
+            <div>
+                <div class="item2" onmouseover=mostrarMenu() onmouseout=esconderMenu()>
+                    <div class="item21">Elegir Tema</div>
+                    <div class="item22"><img src="./imgs/dropdown.svg" alt=""></div>
+                </div>
+                <div class="menudesplegable">
+                    <ul onmouseover=mostrarMenu() onmouseout=esconderMenu()>
+                        <li class="sailorday" onclick=changeThemeDay()><u>S</u>ailor Day</li>
+                        <li class="sailornight" onclick=changeThemeNight()>Sailor Night</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="item3" onclick=misguifosHome()>
+                <a href="./upload.html"><u>M</u>is Guifos</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="busqueda">
+        <div class="buscar">
+            <p>Buscar</p>
+        </div>
+        <div>
+            <form method="GET">
+                <input class="ingresa_busqueda" type="text" name="busquedaIngresada" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…">
+                <a href="#" onclick=resultadoBuscar(valorBuscado)><img id="lupa" src="./imgs/lupa_inactive.svg" alt=""> Buscar</i></a>
+            </form>
+        </div>
+        <div class="resultadoBusqueda">
+            <div onclick=buscando(0)>Resultado de búsqueda sugerido</div>
+            <div onclick=buscando(1)>Un resultado de búsqueda similar</div>
+            <div onclick=buscando(2)>Y otro más</div>
+        </div>
+    </div>
+
+    <div class="busquedasrealizadas">
+        <div class="busqueda1"></div>
+        <div class="busqueda2"></div>
+        <div class="busqueda3"></div>
+    </div>
+
+    <div class="tituloBusqueda">
+        <p>Busqueda</p>
+    </div>
+
+    <div class="busquedaGif">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+    </div>
+
+    <div class="sugerimos">
+        <p>Hoy te sugerimos</p>
+    </div>
+    
+    <div class="sugeridos">
+        <div class="item_sugeridos">
+            <div class="cabezal_sugeridos">
+                <div></div>
+                <span><img src="./imgs/close.svg" alt=""></span>
+            </div>
+            <div class="gif_sugeridos">
+                <img src="" alt="">
+                <div class="boton_vermas" onclick=verMas(0)>VER MÁS</div>
+            </div>
+        </div>
+        <div class="item_sugeridos">
+            <div class="cabezal_sugeridos">
+                <div></div>
+                <img src="./imgs/close.svg" alt="">
+            </div>
+            <div class="gif_sugeridos">
+                <span><img src="" alt=""></span>
+                <div class="boton_vermas" onclick=verMas(1)>VER MÁS</div>
+            </div>
+        </div>
+        <div class="item_sugeridos">
+            <div class="cabezal_sugeridos">
+                <div></div>
+                <img src="./imgs/close.svg" alt="">
+            </div>
+            <div class="gif_sugeridos">
+                <span><img src="" alt=""></span>
+                <div class="boton_vermas" onclick=verMas(2)>VER MÁS</div>
+            </div>
+        </div>
+        <div class="item_sugeridos">
+            <div class="cabezal_sugeridos">
+                <div></div>
+                <img src="./imgs/close.svg" alt="">
+            </div>
+            <div class="gif_sugeridos">
+                <span><img src="" alt=""></span>
+                <div class="boton_vermas" onclick=verMas(3)>VER MÁS</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tituloVerMas">
+        <p>Ver Más</p>
+    </div>
+
+    <div class="busquedaVerMasGif">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+    </div>
+
+    <div class="tendencias">
+        <p>Tendencias</p>
+    </div>
+
+    <div class="resultadoTendencias">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+    </div>
+</body>
+</html>

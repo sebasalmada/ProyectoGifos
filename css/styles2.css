@@ -1,0 +1,946 @@
+* { 
+    margin: 0 0 0 0; 
+    padding:0; 
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #110038;
+}
+
+a {
+    text-decoration: none;
+}
+
+.stripe {
+    background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+    box-shadow: 0 1px 0 0 #110038;
+}
+
+.stripe div {
+    padding: 3px 0px 4px 7px;
+}
+
+p {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+}
+
+nav {
+    margin-top: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 102px;
+    margin-left: 6.32%;
+}
+
+.logo_upload {
+    margin-left: 4.2%;
+    display: flex;
+    align-items: center;
+}
+
+.logo_upload a {
+    margin-right: 5.23%;
+    width: 24px;
+}
+
+.logo_upload a img {
+    vertical-align: middle;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 9.8% ;
+    width: 478.5px;
+}
+
+.item1 {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 18px;
+    background: #EE3EFE;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+    padding: 9px 26.5px 9px 26.5px;
+    margin-right: 16px;
+    cursor: pointer; 
+}
+
+.item1 a {
+    color: #FFFFFF;
+}
+
+.item1:hover {
+    background: #CE36DB 100%;
+    outline: 1px dashed #110038;
+    outline-offset: -4px;
+ }
+
+.item2 {
+    display: flex;
+    justify-content: start;
+    background: #EE3EFE;
+    cursor: pointer; 
+}
+
+.item2:hover {
+   background: #CE36DB 100%;
+   outline: 1px dashed #110038;
+   outline-offset: -4px;
+}
+
+.item21 {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 18px;
+    background: transparent;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+    padding: 9px 26.5px 9px 26.5px;
+    margin-right: 1px;
+}
+
+.item22 {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 18px;
+    background: transparent;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+    padding: 9px 13px 9px 13px;
+    margin-right: 1px;
+}
+
+.item22 img {
+    fill: white;
+}
+
+.item3 {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 18px;
+    padding: 9px 0px 9px 0px;
+    margin-left: 16px;
+    border: 1px solid transparent;
+    width: 95px;
+    cursor: pointer; 
+}
+
+.item3:hover {
+    border: 1px dotted #FFFFFF;;
+}
+
+.item3 a {
+    color: #FFFFFF;
+}
+
+.menudesplegable {
+    display: none;
+    position: absolute;
+    width: 178px;
+    background: #B4B4B4;
+    box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.menudesplegable ul {
+    height: 102px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menudesplegable ul li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.sailorday {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #110038;
+    letter-spacing: 0;
+    line-height: 22px;
+    background: #CCCCCC;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+    height: 36px;
+    width: 88.23%;
+    display: flex;
+    align-items: center;
+    cursor: pointer; 
+    padding-left: 16px;
+}
+
+
+.sailornight {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 22px;
+    background: #2E32FB;
+    border: 1px solid rgba(51,53,143,0.20);
+    box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+    height: 36px;
+    width: 88.23%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-left: 16px;
+}
+
+
+.busqueda {
+    background: #B4B4B4;
+    box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+    margin: 38px 9.8% 0 6.32%;
+    height: 99px;
+    padding-top: 3px;
+}
+
+.buscar {
+    background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+    margin: 0px 3px 0 3px;
+}
+
+.buscar p {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+    padding: 3px;
+}
+
+form {
+    padding: 12px 0 12px 15px;
+    display: flex;
+    align-items: center;
+}
+
+.ingresa_busqueda {
+    width: 88.5%;
+    height: 46px;
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #B4B4B4;
+    letter-spacing: 0;
+    line-height: 22px;
+    padding: 13px 0 13px 1.51%;
+}
+
+form a {
+    height: 36px;
+    width: 102px;
+    margin-left: 8px;
+    margin-right: 2%;
+    padding-left: 10px;
+    background: #B4B4B4;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #8F8F8F;
+    letter-spacing: 0;
+    line-height: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+form a img {
+    margin-right: 10px;
+}
+
+/*
+form a:visited {
+    background: #EE3EFE;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+    color: #FFFFFF;
+}*/
+
+.resultadoBusqueda {
+    height: 160px;
+    background: #B4B4B4;
+    box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+    padding: 17px 0 6px 0;
+    display: none;
+    position: relative;
+    z-index: 1;
+}
+
+.resultadoBusqueda div {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #110038;
+    letter-spacing: 0;
+    line-height: 22px;
+    height: 36px;
+    width: 88.08%;
+    margin-left: 12px;
+    border: 1px solid #110038;
+    background: #CCCCCC;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+    padding: 6px 0 6px 1.51%;
+    margin-bottom: 11px;
+    cursor: pointer;
+}
+
+.resultadoBusqueda div:hover {
+    border: 1px solid #110038;
+}
+
+.sugerimos {
+    background: #FFFAFE;
+    border: 1px solid #2E32FB;
+    box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #110038;
+    margin: 38px 9.8% 0 6.32%;
+    height: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.sugerimos p {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    color: #110038;
+    letter-spacing: 0;
+    margin-left: 7px;
+}
+
+.sugeridos {
+    display: flex;
+    justify-content: space-between;
+    margin: 38px 9.8% 0 6.32%;
+}
+
+.item_sugeridos {
+    width: 24%;
+    background: #B4B4B4;
+    box-shadow: inset -2px -2px 0 0 #5C5C5C, inset 2px 2px 0 0 #FFFFFF;
+    padding: 3px 4px 3px 4px;
+}
+
+.cabezal_sugeridos {
+    background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+    height: 24px;
+    vertical-align: middle;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    padding: 3px 3px 3px 3px;
+    margin: 3px 4px 0 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gif_sugeridos {
+    height: 280px;
+    margin: 2px 4px 2px 4px;
+}
+
+.gif_sugeridos:hover {
+    border: 1px solid #110038;
+}
+
+.gif_sugeridos img {
+    width: 100%;
+    height: 100%;
+}
+
+.gif_sugeridos div {
+    position: relative;
+    top: -49px;
+    left: 7px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.boton_vermas {
+    background: #2E32FB;
+    border: 1px solid #4C2F99;
+    box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 18px;
+    width: 81px;
+    height: 34px;
+    padding: 8px 10px 8px 10px;
+}
+
+.tendencias {
+    background: #FFFAFE;
+    border: 1px solid #2E32FB;
+    box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #110038;
+    margin: 68px 9.8% 0 6.32%;
+    height: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.tendencias p {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    color: #110038;
+    letter-spacing: 0;
+    margin-left: 7px;
+}
+
+/*Busqueda*/
+
+.tituloBusqueda {
+    background: #FFFAFE;
+    border: 1px solid #E6BBE2;
+    box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+    margin: 38px 9.8% 0 6.32%;
+    height: 32px;
+    display: none;
+    align-items: center;
+}
+
+.tituloBusqueda p {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    color: #110038;
+    letter-spacing: 0;
+    margin-left: 7px;
+}
+
+.busquedaGif {
+    margin: 38px 9.8% 0 6.32%;
+    display: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.busquedaGif img {
+    margin-bottom: 2%;
+    height: 220px;
+}
+
+/*VerMas*/
+
+.tituloVerMas {
+    background: #FFFAFE;
+    border: 1px solid #E6BBE2;
+    box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+    margin: 38px 9.8% 0 6.32%;
+    height: 32px;
+    display: none;
+    align-items: center;
+}
+
+.tituloVerMas p {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    color: #110038;
+    letter-spacing: 0;
+    margin-left: 7px;
+}
+
+.busquedaVerMasGif {
+    margin: 38px 9.8% 0 6.32%;
+    display: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.busquedaVerMasGif img {
+    margin-bottom: 2%;
+    height: 220px;
+}
+
+/*Tendencias*/
+
+.resultadoTendencias {
+    margin: 38px 9.8% 5% 6.32%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.resultadoTendencias img {
+    margin-bottom: 2%;
+    height: 220px;
+}
+
+/*CREAR GUIFOS*/
+
+.crearguifos {
+    background: #B4B4B4;
+    box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+    width: 684px;
+    height: 386px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    
+}
+
+.cabezal_crearguifos {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+    padding: 3.4px 4px 2.6px 4px;
+    margin: 3px 3px 0 3px;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.texto_crearguifos {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 93px 0px 25px;
+
+}
+
+.texto_crearguifos div h3 {
+    margin-left: 16px;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #110038;
+    letter-spacing: 0;
+    line-height: 22px;
+}
+
+.texto_crearguifos div p {
+    margin-left: 16px;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    color: #110038;
+    letter-spacing: 0;
+    line-height: 16px;
+    margin-top: 17px;
+}
+
+.botones_crearguifos {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 36px;
+    margin-top: 28px;
+}
+
+.boton_crearguifos1 {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 18px;
+    background: #110038;
+    border: 1px solid #B4B4B4;
+    box-shadow: inset -1px -1px 0 0 #5C5C5C, inset 1px 1px 0 0 #FFF4FD;
+    padding: 9px 39.5px 9px 39.5px;
+    margin-right: 16px;
+    
+}
+
+.boton_crearguifos1:hover {
+    outline: 1px dashed #B4B4B4;
+    outline-offset: -4px;
+}
+
+.boton_crearguifos2 {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 18px;
+    background: #EE3EFE;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+    padding: 9px 39.5px 9px 39.5px;
+}
+
+.boton_crearguifos3 {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 18px;
+    background: #EE3EFE;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+    padding: 9px 9px 9px 9px;
+}
+
+.botones_capturar {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 36px;
+    margin-top: 20px;
+}
+
+.capturar {
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+    width: 860px;
+    height: 548px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    margin-top: 75px;
+    display: none;
+    flex-direction: column;
+    justify-content: start;
+    
+}
+
+.capturar video {
+    width: 100%;
+    padding: 11px 17px 0 11px;
+}
+
+.botones_listo {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 36px;
+    margin-top: 20px;
+}
+
+.boton_crearguifos4 {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 18px;
+    background: #FF6161;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
+    vertical-align: middle;
+    padding: 0 9px 0 9px;
+}
+
+.boton_crearguifos5 {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 18px;
+    background: #FF6161;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
+    padding: 9px 53.5px 9px 53.5px;
+}
+
+.preview {
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+    width: 860px;
+    height: 548px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    margin-top: 75px;
+    display: none;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.previewGif {
+    width: 100%;
+    height: 55ch;
+    padding: 11px 17px 0 11px;
+}
+
+
+.cronometro {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #110038;
+    letter-spacing: 0;
+    line-height: 22px;
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+    height: 36px;
+    width: 134px;
+    margin-left: 36px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 2%;
+}
+
+.chequeo {
+    display: none;
+    justify-content: space-between;
+}
+
+.botones_repetir_subir {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 36px;
+    margin-top: 20px;
+}
+
+/* Subiendo */
+
+.subiendo {
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+    width: 860px;
+    height: 548px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    margin-top: 75px;
+    display: none;
+    flex-direction: column;
+    
+}
+
+.globe {
+    margin: 8px 14px 0 8px;
+    width: 838px;
+    height: 440px;
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+}
+
+.globe img {
+    margin-top: 119px;
+    margin-bottom: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.globe p {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #110038;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 22px;
+}
+
+.carga {
+    display: flex;
+    justify-content: center;
+    margin-top: 41px;
+}
+
+.sincargar {
+    background: #999999;
+    width: 12px;
+    height: 20px;
+    margin-left: 1px;
+}
+
+.tiemporestante p {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    color: rgba(17,0,56,0.64);
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 14px;
+    margin-top: 8px;
+}
+
+.cargado {
+    background: #EE3EFE;
+    width: 12px;
+    height: 20px;
+    margin-left: 1px;
+}
+
+.boton_cancelar {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 28px;
+}
+
+/*EXITO*/
+
+.exito {
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+    width: 721px;
+    height: 391px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    margin-top: 75px;
+    display: none;
+    flex-direction: column;
+    
+}
+
+.boton_listo {
+    font-family: 'Chakra Petch', sans-serif;
+    width: 144px;
+    font-weight: normal;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 18px;
+    background: #EE3EFE;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+    padding: 9px 39.5px 9px 39.5px;
+    margin-right: 46px;
+}
+
+.gifListo {
+    margin: 8px 14px 0 8px;
+    width: 648px;
+    height: 191;
+    margin-left: 27px;
+    margin-top: 29px;
+    margin-top: 64px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.previewGifListo {
+    width: 371px;
+    height: 196px;
+    opacity: 0.8;
+}
+
+.columna_derecha {
+    margin-left: 24px;
+    display: flex;
+    flex-direction: column;
+    width: 256px;
+    
+}
+
+.gifListo p {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #110038;
+    letter-spacing: 0;
+    text-align: left;
+    line-height: 22px;
+    margin-bottom: 2px;
+}
+
+
+
+.boton_copiar_descargar {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 18px;
+    background: #110038;
+    border: 1px solid #B4B4B4;
+    box-shadow: inset -1px -1px 0 0 #5C5C5C, inset 1px 1px 0 0 #FFF4FD;
+    padding: 9px 39.5px 9px 39.5px;
+    margin-top: 14px;
+    width: 256px;
+}
+
+/*Mis Guifos*/
+
+.misGuifos {
+    background: #FFFAFE;
+    border: 1px solid #2E32FB;
+    box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #110038;
+    margin: 153px 9.8% 0 6.32%;
+    height: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.misGuifos p {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    color: #110038;
+    letter-spacing: 0;
+    margin-left: 7px;
+}
+
+.desplegarMisGuifos {
+    margin: 38px 9.8% 0 6.32%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.desplegarMisGuifos img {
+    margin-bottom: 2%;
+    height: 220px;
+}
