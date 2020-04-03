@@ -26,7 +26,7 @@ function captaBusqueda() {
 ///Busqueda///
 
 async function giphySearch(search) {
-    let url = "http://api.giphy.com/v1/gifs/search?q="
+    let url = "https://api.giphy.com/v1/gifs/search?q="
     const res = await fetch(url + search + '&api_key=' + apiKey);
     const datos = await res.json();
     return datos;

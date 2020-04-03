@@ -1,4 +1,4 @@
-var urlTendencias = 'http://api.giphy.com/v1/gifs/trending?api_key=';
+var urlTendencias = 'https://api.giphy.com/v1/gifs/trending?api_key=';
 
 
 ///Busqueda Tendencias///

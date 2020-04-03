@@ -2,7 +2,7 @@
 
 var recorder = {};
 var blob
-var postURL = 'http://upload.giphy.com/v1/gifs';
+var postURL = 'https://upload.giphy.com/v1/gifs';
 var themeUpload = "day";
 var URLgifGrabado = "";
 var arrayMisGuifos = [];
@@ -24,7 +24,7 @@ function setMisGuifos() {
     }
 
     for(var i = 0; i < arrayMisGuifos.length; i++) {
-        let urlGif = 'http://media3.giphy.com/media/' + arrayMisGuifos[i] + '/giphy.gif?cid=1a216cfcd6600562cb89382378d38a7e52e97956f5e90061&rid=giphy.gif';
+        let urlGif = 'https://media3.giphy.com/media/' + arrayMisGuifos[i] + '/giphy.gif?cid=1a216cfcd6600562cb89382378d38a7e52e97956f5e90061&rid=giphy.gif';
         let imagenNueva = document.querySelectorAll(".desplegarMisGuifos img");
         imagenNueva[i].src = urlGif;
     }
@@ -253,7 +253,7 @@ function upload() {
             let exito = document.querySelector('.exito');
             exito.style.display = "flex";
             for(let i = 0; i < arrayMisGuifos.length; i++) {
-                let urlGif = 'http://media3.giphy.com/media/' + arrayMisGuifos[i] + '/giphy.gif?cid=1a216cfcd6600562cb89382378d38a7e52e97956f5e90061&rid=giphy.gif';
+                let urlGif = 'https://media3.giphy.com/media/' + arrayMisGuifos[i] + '/giphy.gif?cid=1a216cfcd6600562cb89382378d38a7e52e97956f5e90061&rid=giphy.gif';
                 let imagenNueva = document.querySelectorAll(".desplegarMisGuifos img");
                 imagenNueva[i].src = urlGif;
             }

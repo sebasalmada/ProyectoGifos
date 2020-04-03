@@ -14,7 +14,7 @@ async function sugeridos() {
     setLocalStorage();
     sugeridosFinal();
     for(i = 0; i < 4; i++){
-        let url = "http://api.giphy.com/v1/gifs/search?q="
+        let url = "https://api.giphy.com/v1/gifs/search?q="
         let res = await fetch(url + sugerenciasFinal[i] + '&api_key=' + apiKey);
         let datos = await res.json();
         let objetoSugeridos = datos;
